@@ -50,20 +50,17 @@
   }
 
   /* Buttons */
-  .btn {
+  button {
     @apply inline-flex items-center px-2.5 py-1.5 border text-sm font-medium hover:opacity-80;
   }
-  .btn-default {
-    @apply btn;
+  button.btn-primary {
+    @apply border-transparent primary on-primary;
   }
-  .btn-primary {
-    @apply btn border-transparent primary on-primary;
+  button.btn-secondary {
+    @apply border-transparent secondary on-secondary;
   }
-  .btn-secondary {
-    @apply btn border-transparent secondary on-secondary;
-  }
-  .btn-borderless {
-    @apply btn border-transparent;
+  button.btn-borderless {
+    @apply border-transparent;
   }
 
   /* Hero icons svg */
@@ -72,19 +69,27 @@
   }
 
   /* Table */
-  .table {
+  table {
     @apply min-w-full;
   }
-  .table thead {
+  table thead {
     @apply surface on-surface-light;
   }
-  .table thead th {
+  table thead th {
     @apply px-4 py-3 text-left text-xs font-semibold;
   }
-  .table tbody {
+  table tbody {
     @apply background on-background;
   }
-  .table tbody tr td {
+  table tbody tr td {
     @apply whitespace-nowrap px-4 py-2 text-sm;
+  }
+
+  /* Input groups */
+  label {
+    @apply block text-xs font-medium on-background-light;
+  }
+  input {
+    @apply block w-full border-b text-sm focus:outline-0;
   }
 }
