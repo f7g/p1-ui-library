@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  /* Backgrounds */
   .primary {
     @apply bg-lime-300;
   }
@@ -25,6 +26,7 @@
     @apply bg-red-700;
   }
 
+  /* Foregrounds */
   .on-primary {
     @apply text-black;
   }
@@ -34,15 +36,22 @@
   .on-background {
     @apply text-black;
   }
+  .on-background-light {
+    @apply text-neutral-500;
+  }
   .on-surface {
     @apply text-black;
+  }
+  .on-surface-light {
+    @apply text-neutral-500;
   }
   .on-error {
     @apply text-white;
   }
 
+  /* Buttons */
   .btn {
-    @apply inline-flex items-center px-2.5 py-1.5 border text-xs font-medium hover:opacity-80;
+    @apply inline-flex items-center px-2.5 py-1.5 border text-sm font-medium hover:opacity-80;
   }
   .btn-default {
     @apply btn;
@@ -57,7 +66,25 @@
     @apply btn border-transparent;
   }
 
+  /* Hero icons svg */
   .icon-xs {
     @apply w-4 h-4;
+  }
+
+  /* Table */
+  .table {
+    @apply min-w-full;
+  }
+  .table thead {
+    @apply surface on-surface-light;
+  }
+  .table thead th {
+    @apply px-4 py-3 text-left text-xs font-semibold;
+  }
+  .table tbody {
+    @apply background on-background;
+  }
+  .table tbody tr td {
+    @apply whitespace-nowrap px-4 py-2 text-sm;
   }
 }
