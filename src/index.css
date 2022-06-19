@@ -41,10 +41,23 @@
     @apply text-white;
   }
 
+  .btn {
+    @apply inline-flex items-center px-2.5 py-1.5 border text-xs font-medium hover:opacity-80;
+  }
   .btn-default {
+    @apply btn;
   }
   .btn-primary {
+    @apply btn border-transparent primary on-primary;
   }
-  .btn-transparent {
+  .btn-secondary {
+    @apply btn border-transparent secondary on-secondary;
+  }
+  .btn-borderless {
+    @apply btn border-transparent;
+  }
+
+  .icon-xs {
+    @apply w-4 h-4;
   }
 }
