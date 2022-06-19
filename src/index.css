@@ -5,10 +5,10 @@
 @layer base {
   /* Backgrounds */
   .primary {
-    @apply bg-lime-300;
+    @apply bg-green-200;
   }
   .primary-variant {
-    @apply bg-lime-500;
+    @apply bg-green-400;
   }
   .secondary {
     @apply bg-neutral-800;
@@ -31,7 +31,7 @@
     @apply text-black;
   }
   .on-secondary {
-    @apply text-lime-300;
+    @apply text-green-300;
   }
   .on-background {
     @apply text-black;
