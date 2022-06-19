@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  overflow: hidden;
+}
+
 @layer base {
   /* Backgrounds */
   .primary {
@@ -98,9 +107,15 @@
   input {
     @apply block w-full border-b text-sm focus:outline-0;
   }
+  select {
+    @apply block w-full bg-transparent border p-1 text-sm;
+  }
 
   /* Borders */
   .border-dark {
     @apply border-gray-700;
+  }
+  .border-on-secondary {
+    @apply border-green-300;
   }
 }

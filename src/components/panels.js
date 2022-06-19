@@ -18,7 +18,7 @@ export default function Panels() {
         <div className="w-full ">
           <div className="max-w-lg space-y-8">
             <Panel>
-              <Panel.Heading>Bounce rate</Panel.Heading>
+              <Panel.Heading>Rate</Panel.Heading>
               <Panel.Body>
                 <div className="inline-flex">
                   <ArrowDownIcon className="on-background-error w-3 mr-1" />
@@ -28,7 +28,7 @@ export default function Panels() {
               </Panel.Body>
             </Panel>
             <Panel>
-              <Panel.Heading>Bounce rate</Panel.Heading>
+              <Panel.Heading>Rate</Panel.Heading>
               <Panel.Body>
                 <div className="inline-flex">
                   <ArrowDownIcon className="on-background-error w-3 mr-1" />
