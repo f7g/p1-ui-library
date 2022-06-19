@@ -2,6 +2,7 @@ import ColorTheme from "./components/color-theme";
 import Buttons from "./components/buttons";
 import Tables from "./components/tables";
 import InputGroups from "./components/input-groups";
+import Panels from "./components/panels";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Buttons />
       <Tables />
       <InputGroups />
+      <Panels />
     </div>
   );
 }

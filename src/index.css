@@ -39,11 +39,17 @@
   .on-background-light {
     @apply text-neutral-500;
   }
+  .on-background-error {
+    @apply text-red-700;
+  }
   .on-surface {
     @apply text-black;
   }
   .on-surface-light {
     @apply text-neutral-500;
+  }
+  .on-surface-error {
+    @apply text-red-700;
   }
   .on-error {
     @apply text-white;
@@ -87,9 +93,14 @@
 
   /* Input groups */
   label {
-    @apply block text-xs font-medium on-background-light;
+    @apply block text-xs font-medium;
   }
   input {
     @apply block w-full border-b text-sm focus:outline-0;
+  }
+
+  /* Borders */
+  .border-dark {
+    @apply border-gray-700;
   }
 }
