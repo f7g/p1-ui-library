@@ -11,8 +11,10 @@ export default function Buttons() {
             "btn-primary",
             "btn-secondary",
             "btn-borderless",
-          ].map((className) => (
-            <button className={"mr-2 " + className}>.{className}</button>
+          ].map((className, i) => (
+            <button key={i} className={"mr-2 " + className}>
+              .{className}
+            </button>
           ))}
         </div>
         <div className="p-2 text-sm">
@@ -21,8 +23,8 @@ export default function Buttons() {
             "btn-primary",
             "btn-secondary",
             "btn-borderless",
-          ].map((className) => (
-            <button className={"mr-2 " + className}>
+          ].map((className, i) => (
+            <button key={i} className={"mr-2 " + className}>
               <ArrowsExpandIcon className="icon-xs mr-2" />
               <span>.{className}</span>
             </button>
